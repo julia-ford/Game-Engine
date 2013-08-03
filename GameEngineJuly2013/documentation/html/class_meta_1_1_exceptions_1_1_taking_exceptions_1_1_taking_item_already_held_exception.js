@@ -1,0 +1,4 @@
+var class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_item_already_held_exception =
+[
+    [ "TakingItemAlreadyHeldException", "class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_item_already_held_exception.html#afb7ca2ab489cebe194945199b0480af5", null ]
+];

@@ -1,0 +1,4 @@
+var class_meta_1_1_exceptions_1_1_movement_exceptions_1_1_moving_in_invalid_direction_exception =
+[
+    [ "MovingInInvalidDirectionException", "class_meta_1_1_exceptions_1_1_movement_exceptions_1_1_moving_in_invalid_direction_exception.html#a190fa203c9aa9f2a20db8e5ccdc49009", null ]
+];

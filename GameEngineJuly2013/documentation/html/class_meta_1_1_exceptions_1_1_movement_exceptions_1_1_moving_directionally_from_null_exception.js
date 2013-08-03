@@ -1,0 +1,4 @@
+var class_meta_1_1_exceptions_1_1_movement_exceptions_1_1_moving_directionally_from_null_exception =
+[
+    [ "MovingDirectionallyFromNullException", "class_meta_1_1_exceptions_1_1_movement_exceptions_1_1_moving_directionally_from_null_exception.html#a5f2b8b730ffe9487743b0e693aaea7f9", null ]
+];

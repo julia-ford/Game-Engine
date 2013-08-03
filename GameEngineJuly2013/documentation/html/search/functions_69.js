@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['initcommandmatcher',['initCommandMatcher',['../class_meta_1_1_parsing_and_printing_1_1_game_manager.html#a225b9a9bcb391cf2195611315aa63092',1,'Meta::ParsingAndPrinting::GameManager']]],
+  ['initplayerandrooms',['initPlayerAndRooms',['../class_meta_1_1_parsing_and_printing_1_1_game_manager.html#acedcee3cd9d238acbc7ac10906e49c8b',1,'Meta::ParsingAndPrinting::GameManager']]],
+  ['inventory',['Inventory',['../class_meta_1_1_parsing_and_printing_1_1_game_manager.html#a035c31206d9537a7f549339ab942133f',1,'Meta.ParsingAndPrinting.GameManager.Inventory()'],['../class_stuff_1_1_things_1_1_containers_1_1_inventory.html#a73583476ad549af91ed05257f5324e65',1,'Stuff.Things.Containers.Inventory.Inventory()']]],
+  ['isempty',['IsEmpty',['../interface_interfaces_1_1_container.html#a6f39aeca7cd34fcc5fd0ce4519b896cd',1,'Interfaces.Container.IsEmpty()'],['../class_stuff_1_1_room.html#a2e81ac38a76a5d785d16ba610eebd83f',1,'Stuff.Room.IsEmpty()'],['../class_stuff_1_1_things_1_1_containers_1_1_basic_container.html#acd3565cf9aea081e70b228a86a231136',1,'Stuff.Things.Containers.BasicContainer.IsEmpty()']]],
+  ['isnamed',['IsNamed',['../class_stuff_1_1_things_1_1_containers_1_1_clothes.html#a86b7ba2b20f2ee6c1e28dcf2180b7084',1,'Stuff.Things.Containers.Clothes.IsNamed()'],['../class_stuff_1_1_things_1_1_containers_1_1_inventory.html#a0dc765dc7a7c26462eb18d5a3df9165e',1,'Stuff.Things.Containers.Inventory.IsNamed()'],['../class_stuff_1_1_things_1_1_thing.html#a74c6ddc0ad0045481d75b345a75507e2',1,'Stuff.Things.Thing.IsNamed()']]],
+  ['isopaque',['IsOpaque',['../class_stuff_1_1_things_1_1_containers_1_1_basic_openable_container.html#ab932ff4aba9f32cba5495ad8d772d1bd',1,'Stuff::Things::Containers::BasicOpenableContainer']]],
+  ['isopen',['IsOpen',['../interface_interfaces_1_1_openable.html#aa6be055329f3e125324c0bf69b8da70b',1,'Interfaces.Openable.IsOpen()'],['../class_stuff_1_1_things_1_1_containers_1_1_basic_openable_container.html#a2652e639444d44204b78b3feef8642e4',1,'Stuff.Things.Containers.BasicOpenableContainer.IsOpen()']]]
+];

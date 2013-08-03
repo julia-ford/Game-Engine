@@ -1,0 +1,25 @@
+var class_stuff_1_1_room =
+[
+    [ "Room", "class_stuff_1_1_room.html#a8d55d5d389c7318465ca979e21bb714f", null ],
+    [ "AddThing", "class_stuff_1_1_room.html#a98978f5c9c52551f021a90655ed3ab60", null ],
+    [ "Contains", "class_stuff_1_1_room.html#a58aaadbe561ceef7c16949295b1de566", null ],
+    [ "getAdjacenciesDescription", "class_stuff_1_1_room.html#abe99b60f6867c7a657a9f9d6e56d8ec0", null ],
+    [ "GetAdjacent", "class_stuff_1_1_room.html#a7e65c8db54c9549bde71a32cf9f04eb5", null ],
+    [ "getAdjacentDescription", "class_stuff_1_1_room.html#ac842f3f205674e04bbfb8fe1f4bbb136", null ],
+    [ "GetContents", "class_stuff_1_1_room.html#a1e99c42d52fd66dc75432b295d997e66", null ],
+    [ "getContentsDescription", "class_stuff_1_1_room.html#aa960328ea34b22f88a6820d621d7ecc3", null ],
+    [ "GetDescription", "class_stuff_1_1_room.html#a636b1daa6a304cded7b739cabf0541fc", null ],
+    [ "GetName", "class_stuff_1_1_room.html#a69d4e89c042afeb0e830c5369b1e064e", null ],
+    [ "GetQualifiedName", "class_stuff_1_1_room.html#a9b133831a21c6ee016c1874df90df439", null ],
+    [ "GetRecursiveContents", "class_stuff_1_1_room.html#a8e5d01d802a65e5ef3a68078339b4bc6", null ],
+    [ "GetVisibleContents", "class_stuff_1_1_room.html#a71a10f38c81ea6766b8fddccbb884ee2", null ],
+    [ "GetVisibleRecursiveContents", "class_stuff_1_1_room.html#a32fca99043b1723c0a3b282b18313c6f", null ],
+    [ "HasAdjacent", "class_stuff_1_1_room.html#a3608d3b766912a7ef97914c192708a35", null ],
+    [ "IsEmpty", "class_stuff_1_1_room.html#a2e81ac38a76a5d785d16ba610eebd83f", null ],
+    [ "RemoveThing", "class_stuff_1_1_room.html#ad88fe342b35a923e38af9a21f65f0591", null ],
+    [ "SetAdjacent", "class_stuff_1_1_room.html#ab0f37fff4645118f765ebec0682749ec", null ],
+    [ "adjacencies", "class_stuff_1_1_room.html#a157238302743648cc40a45d7f529ea39", null ],
+    [ "contents", "class_stuff_1_1_room.html#a9cab70519dc1bfa5d57eda2f355b7851", null ],
+    [ "description", "class_stuff_1_1_room.html#ab071ec13b8400e047cdf72a4f0fe695d", null ],
+    [ "name", "class_stuff_1_1_room.html#a5109836bd5a8d09d06a405c29d0d38d3", null ]
+];

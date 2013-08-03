@@ -1,0 +1,4 @@
+var class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_item_flagged_untakeable_exception =
+[
+    [ "TakingItemFlaggedUntakeableException", "class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_item_flagged_untakeable_exception.html#abac06d1913ffd6f9a9a9e56eeb8bb79b", null ]
+];

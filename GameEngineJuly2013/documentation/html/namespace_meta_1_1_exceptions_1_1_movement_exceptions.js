@@ -1,0 +1,5 @@
+var namespace_meta_1_1_exceptions_1_1_movement_exceptions =
+[
+    [ "MovingInInvalidDirectionException", "class_meta_1_1_exceptions_1_1_movement_exceptions_1_1_moving_in_invalid_direction_exception.html", "class_meta_1_1_exceptions_1_1_movement_exceptions_1_1_moving_in_invalid_direction_exception" ],
+    [ "MovingDirectionallyFromNullException", "class_meta_1_1_exceptions_1_1_movement_exceptions_1_1_moving_directionally_from_null_exception.html", "class_meta_1_1_exceptions_1_1_movement_exceptions_1_1_moving_directionally_from_null_exception" ]
+];

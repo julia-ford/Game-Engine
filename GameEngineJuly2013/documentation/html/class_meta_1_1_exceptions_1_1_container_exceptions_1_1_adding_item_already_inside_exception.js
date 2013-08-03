@@ -1,0 +1,4 @@
+var class_meta_1_1_exceptions_1_1_container_exceptions_1_1_adding_item_already_inside_exception =
+[
+    [ "AddingItemAlreadyInsideException", "class_meta_1_1_exceptions_1_1_container_exceptions_1_1_adding_item_already_inside_exception.html#afd3e7f3f6d08cf24f9f2dfca48804c93", null ]
+];

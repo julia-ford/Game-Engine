@@ -1,0 +1,7 @@
+var namespace_meta_1_1_exceptions_1_1_taking_exceptions =
+[
+    [ "TakingFromDifferentRoomException", "class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_from_different_room_exception.html", "class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_from_different_room_exception" ],
+    [ "TakingItemAlreadyHeldException", "class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_item_already_held_exception.html", "class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_item_already_held_exception" ],
+    [ "TakingItemFromNullException", "class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_item_from_null_exception.html", "class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_item_from_null_exception" ],
+    [ "TakingItemFlaggedUntakeableException", "class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_item_flagged_untakeable_exception.html", "class_meta_1_1_exceptions_1_1_taking_exceptions_1_1_taking_item_flagged_untakeable_exception" ]
+];

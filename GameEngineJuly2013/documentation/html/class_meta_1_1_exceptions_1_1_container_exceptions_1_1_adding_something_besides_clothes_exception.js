@@ -1,0 +1,4 @@
+var class_meta_1_1_exceptions_1_1_container_exceptions_1_1_adding_something_besides_clothes_exception =
+[
+    [ "AddingSomethingBesidesClothesException", "class_meta_1_1_exceptions_1_1_container_exceptions_1_1_adding_something_besides_clothes_exception.html#a60bec2690e69f38db292feacc425a0e6", null ]
+];

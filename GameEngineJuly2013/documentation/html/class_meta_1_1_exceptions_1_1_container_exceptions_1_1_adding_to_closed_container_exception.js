@@ -1,0 +1,4 @@
+var class_meta_1_1_exceptions_1_1_container_exceptions_1_1_adding_to_closed_container_exception =
+[
+    [ "AddingToClosedContainerException", "class_meta_1_1_exceptions_1_1_container_exceptions_1_1_adding_to_closed_container_exception.html#aae169d11a44eedba6943165a644439fa", null ]
+];
