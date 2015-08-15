@@ -3,3 +3,5 @@ C:\Users\Julia\Documents\Visual Studio 2010\Projects\GameEngineJuly2013\GameEngi
 C:\Users\Julia\Documents\Visual Studio 2010\Projects\GameEngineJuly2013\GameEngineJuly2013\bin\Debug\GameEngineJuly2013.pdb
 C:\Users\Julia\Documents\Visual Studio 2010\Projects\GameEngineJuly2013\GameEngineJuly2013\obj\x86\Debug\GameEngineJuly2013.exe
 C:\Users\Julia\Documents\Visual Studio 2010\Projects\GameEngineJuly2013\GameEngineJuly2013\obj\x86\Debug\GameEngineJuly2013.pdb
+C:\Users\Julia\Documents\GitHub\Game-Engine\GameEngineJuly2013\obj\x86\Debug\GameEngineJuly2013.exe
+C:\Users\Julia\Documents\GitHub\Game-Engine\GameEngineJuly2013\obj\x86\Debug\GameEngineJuly2013.pdb

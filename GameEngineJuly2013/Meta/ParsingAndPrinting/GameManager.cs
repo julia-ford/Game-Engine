@@ -559,6 +559,88 @@ namespace Meta.ParsingAndPrinting
 		}
 
 		/// <summary>
+		/// Parameter disambiguation for wearing something.
+		/// </summary>
+		/// <param name="itemsList">the list of things that matched the player command</param>
+		/// <param name="name">the name the player entered in their command; needed for printing disambiguation messages</param>
+		/// <param name="verb">the verb in the player command; needed because this can recurse back to findThingNamed()</param>
+		/// <returns>the most likely thing the player probably meant to target</returns>
+		private static Thing disambiguateWearing(List<Thing> itemsList, string name)
+		{
+			// give preference to things not worn
+			List<Thing> notWornList = listNonWornThings(itemsList);
+			if (notWornList.Count == 1) { return notWornList[0]; }
+			if (notWornList.Count > 1) {
+				// give preference to things not inside a worn thing
+				List<Thing> notInsideWornList = listNonInsideWornThings(notWornList);
+				if (notInsideWornList.Count == 1) { return notInsideWornList[0]; }
+				if (notInsideWornList.Count > 1) {
+					// give preference to things not inside carried things
+					List<Thing> notInsideCarriedList = listNonInsideCarriedThings(notInsideWornList);
+					if (notInsideCarriedList.Count == 1) { return notInsideCarriedList[0]; }
+					if (notInsideCarriedList.Count > 1) {
+						// give preference to things that can be taken
+						List<Thing> canBeTakenList = listTakeableThings(notInsideCarriedList);
+						if (canBeTakenList.Count == 1) { return canBeTakenList[0]; }
+						if (canBeTakenList.Count > 1) {
+							// give preference to things not worn by other people
+							List<Thing> notWornByOthersList = listNonWornByOthersThings(canBeTakenList);
+							if (notWornByOthersList.Count == 1) { return canBeTakenList[0]; }
+							if (notWornByOthersList.Count > 1) {
+								// give preference to things not inside things carried by other people
+								List<Thing> notInsideCarriedByOthersList = listNonInsideCarriedByOthersThings(notWornByOthersList);
+								if (notInsideCarriedByOthersList.Count == 1) { return notInsideCarriedByOthersList[0]; }
+								if (notInsideCarriedByOthersList.Count > 1) {
+									// give preference to things not inside something worn by someone else
+									List<Thing> notInsideWornByOthersList = listNonInsideWornByOthersThings(notInsideCarriedByOthersList);
+									if (notInsideWornByOthersList.Count == 1) { return notInsideWornByOthersList[0]; }
+									if (notInsideWornByOthersList.Count > 1) {
+										// give preference to things not carried by others
+										List<Thing> notCarriedByOthersList = listNonCarriedByOthersThings(notInsideWornByOthersList);
+										if (notCarriedByOthersList.Count == 1) { return notCarriedByOthersList[0]; }
+										if (notCarriedByOthersList.Count > 1) {
+											// give preference to things carried by the player
+											List<Thing> carriedList = listCarriedThings(notCarriedByOthersList);
+											if (carriedList.Count == 1) { return carriedList[0]; }
+											if (carriedList.Count > 1) {
+												// give preference to clothing
+												List<Thing> clothingList = listClothingThings(carriedList);
+												if (clothingList.Count == 1) { return clothingList[0]; }
+												if (clothingList.Count > 1) {
+													return handleAmbiguousCases(clothingList, name, someArgumentCommandMatcher["wear"][""]); 
+												} // else, everything is non-clothing
+												else {
+													return handleAmbiguousCases(carriedList, name, someArgumentCommandMatcher["wear"][""]); }
+												} // else, everything not carried by someone else is not carried by the player
+											else {
+												return handleAmbiguousCases(notCarriedByOthersList, name, someArgumentCommandMatcher["wear"][""]); }
+										} // else, everything not inside something worn by someone else is carried by someone else
+										else {
+											return handleAmbiguousCases(notInsideWornByOthersList, name, someArgumentCommandMatcher["wear"][""]); }
+									} // else, everything not inside something carried by someone else is inside something worn by someone else
+									else {
+										return handleAmbiguousCases(notInsideCarriedByOthersList, name, someArgumentCommandMatcher["wear"][""]); }
+								} // else, everything not worn by someone else is inside something carried by someone else
+								else {
+									return handleAmbiguousCases(notWornByOthersList, name, someArgumentCommandMatcher["wear"][""]); }
+							} // else, everything that can be taken is worn by someone else
+							else {
+								return handleAmbiguousCases(canBeTakenList, name, someArgumentCommandMatcher["wear"][""]); }
+						} // else, everything not inside something carried cannot be taken
+						else {
+							return handleAmbiguousCases(notInsideCarriedList, name, someArgumentCommandMatcher["wear"][""]); }
+					} // else, everything not inside something worn is inside something carried
+					else {
+						return handleAmbiguousCases(notInsideWornList, name, someArgumentCommandMatcher["wear"][""]); }
+				} // else, everything not worn is inside something worn
+				else {
+					return handleAmbiguousCases(notWornList, name, someArgumentCommandMatcher["wear"][""]); }
+			} // else, everything is worn
+			else {
+				return handleAmbiguousCases(itemsList, name, someArgumentCommandMatcher["wear"][""]); }
+		}
+
+		/// <summary>
 		/// Attempts to parse a command entered by the player.
 		/// </summary>
 		/// <param name="command">the command that the player entered</param>
